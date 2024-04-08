@@ -36,6 +36,8 @@ namespace SSTranslator.Sunless_Game
             {
                 HotkeysDictionary.Resume.Tooltip = trans["Resume "];
             }
+            if (HotkeysDictionary.SonarPulse.Tooltip != trans["Toggle Sonar Pulse (automatic) "])
+                HotkeysDictionary.SonarPulse.Tooltip = trans["Toggle Sonar Pulse (automatic) "];
             if (trans.ContainsKey(attributes.Tooltip))
             {
 #if DEBUG
