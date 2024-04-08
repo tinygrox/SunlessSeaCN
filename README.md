@@ -69,3 +69,7 @@
 舰船面板界面的汉化：
 
 ![ShipTextureReplace](./img/ShipTextureReplace.png)
+
+日期格式修改：
+
+![DateFormat](./img/DateFormat.png)
