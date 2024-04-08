@@ -1,0 +1,10 @@
+G:\SteamLibrary\steamapps\common\SunlessSea\BepInEx\plugins\Debug\net35\SSTranslator.dll
+H:\SunlessSeaMods\SSTranslator\obj\Debug\net35\SSTranslator.csproj.AssemblyReference.cache
+H:\SunlessSeaMods\SSTranslator\obj\Debug\net35\PluginInfo.cs
+H:\SunlessSeaMods\SSTranslator\obj\Debug\net35\SSTranslator.GeneratedMSBuildEditorConfig.editorconfig
+H:\SunlessSeaMods\SSTranslator\obj\Debug\net35\SSTranslator.AssemblyInfoInputs.cache
+H:\SunlessSeaMods\SSTranslator\obj\Debug\net35\SSTranslator.AssemblyInfo.cs
+H:\SunlessSeaMods\SSTranslator\obj\Debug\net35\SSTranslator.csproj.CoreCompileInputs.cache
+H:\SunlessSeaMods\SSTranslator\obj\Debug\net35\SSTranslator.dll
+G:\SteamLibrary\steamapps\common\SunlessSea\Debug\net35\SSTranslator.dll
+G:\SteamLibrary\steamapps\common\SunlessSea\BepInEx\Debug\net35\SSTranslator.dll

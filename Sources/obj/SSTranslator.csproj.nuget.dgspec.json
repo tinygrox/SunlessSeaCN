@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj": {}
+  },
+  "projects": {
+    "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj",
+        "projectName": "SunlessSeaChineseTranslation",
+        "projectPath": "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj",
+        "packagesPath": "C:\\Users\\Tiny\\.nuget\\packages\\",
+        "outputPath": "H:\\SunlessSeaMods\\SSTranslator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "H:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "H:\\SunlessSeaMods\\SSTranslator\\NuGet.Config",
+          "C:\\Users\\Tiny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net35"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.bepinex.dev/v3/index.json": {}
+        },
+        "frameworks": {
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net35": {
+          "targetAlias": "net35",
+          "dependencies": {
+            "BepInEx.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.*, )"
+            },
+            "BepInEx.Core": {
+              "target": "Package",
+              "version": "[5.*, )"
+            },
+            "BepInEx.PluginInfoProps": {
+              "target": "Package",
+              "version": "[1.*, )"
+            },
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.3.3, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "UnityEngine.Modules": {
+              "include": "Compile",
+              "target": "Package",
+              "version": "[5.5.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
