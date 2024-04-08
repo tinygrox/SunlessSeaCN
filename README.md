@@ -8,7 +8,7 @@
 
 - GitHub 下载对应版本的 BepInEx （[点此前往](https://github.com/BepInEx/BepInEx/releases)），游戏版本是 32 位的，所以你也要下载 32 位的，解压到游戏根目录，然后运行一次游戏，关闭游戏
 
-- 下载本页面发布的压缩包后（[点此前往]()），解压放入到 `BepInEx\plugins` 目录下，运行游戏即可享受
+- 下载本页面发布的压缩包后（[点此前往](https://github.com/tinygrox/SunlessSeaCN/releases)），解压放入到 `BepInEx\plugins` 目录下，运行游戏即可享受
 
 
 
