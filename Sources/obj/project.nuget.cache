@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BrCjLz6J7+CWTLbV507uefpKABdYslD+03+cUTXgaKuetqkspZweqpZBtXcBXqEUIWkcts8wGVYexPGTMK1TWw==",
+  "dgSpecHash": "etYNfA0UO4BINt3vapfOb6pHUE4DS+nmZX4DRt9HEJmGSqGqSgeYgA/aIOEfJiXEQluJT43KOlc3cAA19ov/FA==",
   "success": true,
-  "projectFilePath": "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj",
+  "projectFilePath": "H:\\SunlessSeaMods\\SSTranslator\\Sources\\SSTranslator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tiny\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\Tiny\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",

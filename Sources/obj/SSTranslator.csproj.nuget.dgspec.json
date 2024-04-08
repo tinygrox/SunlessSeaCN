@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj": {}
+    "H:\\SunlessSeaMods\\SSTranslator\\Sources\\SSTranslator.csproj": {}
   },
   "projects": {
-    "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj": {
+    "H:\\SunlessSeaMods\\SSTranslator\\Sources\\SSTranslator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj",
+        "projectUniqueName": "H:\\SunlessSeaMods\\SSTranslator\\Sources\\SSTranslator.csproj",
         "projectName": "SunlessSeaChineseTranslation",
-        "projectPath": "H:\\SunlessSeaMods\\SSTranslator\\SSTranslator.csproj",
+        "projectPath": "H:\\SunlessSeaMods\\SSTranslator\\Sources\\SSTranslator.csproj",
         "packagesPath": "C:\\Users\\Tiny\\.nuget\\packages\\",
-        "outputPath": "H:\\SunlessSeaMods\\SSTranslator\\obj\\",
+        "outputPath": "H:\\SunlessSeaMods\\SSTranslator\\Sources\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "H:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "H:\\SunlessSeaMods\\SSTranslator\\NuGet.Config",
+          "H:\\SunlessSeaMods\\SSTranslator\\Sources\\NuGet.Config",
           "C:\\Users\\Tiny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

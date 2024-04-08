@@ -7,3 +7,11 @@ H:\SunlessSeaMods\SSTranslator\obj\Debug\SSTranslator.AssemblyInfoInputs.cache
 H:\SunlessSeaMods\SSTranslator\obj\Debug\SSTranslator.AssemblyInfo.cs
 H:\SunlessSeaMods\SSTranslator\obj\Debug\SSTranslator.csproj.CoreCompileInputs.cache
 H:\SunlessSeaMods\SSTranslator\obj\Debug\SSTranslator.dll
+G:\SteamLibrary\steamapps\common\SunlessSea\BepInEx\plugins\SunlessSeaChineseTranslation\SunlessSeaChineseTranslation.dll
+H:\SunlessSeaMods\SSTranslator\Sources\obj\Debug\SSTranslator.csproj.AssemblyReference.cache
+H:\SunlessSeaMods\SSTranslator\Sources\obj\Debug\PluginInfo.cs
+H:\SunlessSeaMods\SSTranslator\Sources\obj\Debug\SSTranslator.GeneratedMSBuildEditorConfig.editorconfig
+H:\SunlessSeaMods\SSTranslator\Sources\obj\Debug\SSTranslator.AssemblyInfoInputs.cache
+H:\SunlessSeaMods\SSTranslator\Sources\obj\Debug\SSTranslator.AssemblyInfo.cs
+H:\SunlessSeaMods\SSTranslator\Sources\obj\Debug\SSTranslator.csproj.CoreCompileInputs.cache
+H:\SunlessSeaMods\SSTranslator\Sources\obj\Debug\SunlessSeaChineseTranslation.dll
