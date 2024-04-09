@@ -31,11 +31,11 @@ namespace SSTranslator
             var splashimage = GameObject.Find("EAWarning")?.transform;
             if (splashimage != null)
             {
-                Debug.Log("EAWarning!");
+                //Debug.Log("EAWarning!");
                 var oldSprite = splashimage.GetComponent<Image>();
                 if (oldSprite != null)
                 {
-                    Debug.Log("EAWarning[Sprite]");
+                    //Debug.Log("EAWarning[Sprite]");
                     oldSprite.sprite = SS_Utility.GetSprite(splashimage, "splash-screen.png");
                 }
             }

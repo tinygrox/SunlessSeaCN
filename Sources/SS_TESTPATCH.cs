@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using Sunless.Game.Entities;
+using Sunless.Game.Scripts.UI.Intro;
 using Sunless.Game.UI.Tutorial;
 using Sunless.Game.Unity_Extensions.UI;
 using System;
@@ -13,6 +14,19 @@ namespace SSTranslator
     [HarmonyPatch]
     public class SS_TESTPATCH
     {
+        //// Splash Screen
+        //[HarmonyPrefix]
+        //[HarmonyPatch(typeof(IntroScript), "Update")]
+        //static bool Postfix()
+        //{
+        //    return false;
+        //}
+        //[HarmonyPrefix]
+        //[HarmonyPatch(typeof(IntroScript), "LoadTitleScreen")]
+        //static bool PostfixLoadTitleScreen()
+        //{
+        //    return false;
+        //}
         //[HarmonyPrefix]
         //[HarmonyPatch(typeof(TutorialContainerPanel), nameof(TutorialContainerPanel.AddTutorial), [typeof(Tutorial)])]
         //public static void SSPatch_TutorialContainerPanelPrefix(Tutorial tutorial)
