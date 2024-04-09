@@ -21,7 +21,7 @@ namespace SSTranslator
         [HarmonyPatch("Start")]
         public static void SSPatch_Anchors()
         {
-            Debug.Log($"Fingding 'TitlePanel'.....");
+            //Debug.Log($"Fingding 'TitlePanel'.....");
             Transform child = GameObject.Find("TitlePanel").transform.GetChild(0);
             if (child != null)
             {
@@ -40,11 +40,11 @@ namespace SSTranslator
             Transform child2 = GameObject.Find("TitlePanel").transform.GetChild(1);
             if (child2 != null)
             {
-                Debug.Log($"child2 is find and not null!");
+                //Debug.Log($"child2 is find and not null!");
                 Image img2 = child2.GetComponent<Image>();
                 if (img2 != null)
                 {
-                    Debug.Log($"child2's image is not null!");
+                    //Debug.Log($"child2's image is not null!");
                     Texture2D texture2 = SS_Utility.GetImageTexture2D("TitleZMNew.png");
                     var oldsprite = img2.sprite;
                     if (texture2 != null)
@@ -53,7 +53,7 @@ namespace SSTranslator
                         texture2.wrapMode = TextureWrapMode.Clamp;
                         //Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
                         Sprite mysprite = Sprite.Create(texture2, oldsprite.rect, new Vector2(oldsprite.pivot.x / oldsprite.rect.width, oldsprite.pivot.y / oldsprite.rect.height), oldsprite.pixelsPerUnit, 0, SpriteMeshType.FullRect, oldsprite.border);
-                        Debug.Log($"my sprite is not null!");
+                        //Debug.Log($"my sprite is not null!");
                         img2.sprite = mysprite;
                     }
                 }

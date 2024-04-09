@@ -32,7 +32,7 @@ namespace SSTranslator.Sunless_Game
             }
             SS_Utility.PatchHelper(() =>
             {
-                // HeaderJoy - 可能不生效
+                // HeaderJoy
                 var HeaderJoyImage = parent.transform.Find("Legacy(Clone)/Column1/DeathCertificate/HeaderJoy");
                 if (HeaderJoyImage != null)
                 {
