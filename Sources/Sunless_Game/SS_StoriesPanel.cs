@@ -3,10 +3,8 @@ using HarmonyLib;
 using Sunless.Game.DataHelpers;
 using Sunless.Game.UI.Gazetteer;
 using Sunless.Game.UI.Journal;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SSTranslator.Sunless_Game
 {

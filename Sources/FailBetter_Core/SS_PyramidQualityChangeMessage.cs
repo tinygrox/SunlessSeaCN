@@ -2,10 +2,7 @@
 using FailBetter.Core.Enums;
 using FailBetter.Core.Result.QualityChangeMessages;
 using HarmonyLib;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.FailBetter_Core
 {

@@ -1,13 +1,8 @@
-﻿using FailBetter.Core.QAssoc;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Sunless.Game.ApplicationProviders;
-using Sunless.Game.Entities;
-using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
-using System.Text;
 
 namespace SSTranslator.Sunless_Game
 {

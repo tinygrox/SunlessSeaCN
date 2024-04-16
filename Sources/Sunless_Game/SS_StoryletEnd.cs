@@ -5,13 +5,9 @@ using Sunless.Game.Entities;
 using Sunless.Game.Enums;
 using Sunless.Game.UI.Gazetteer;
 using Sunless.Game.UI.Storylet;
-using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
-using System.Text;
-using UnityEngine;
 
 namespace SSTranslator.Sunless_Game
 {

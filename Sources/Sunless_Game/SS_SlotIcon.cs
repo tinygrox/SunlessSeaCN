@@ -1,16 +1,7 @@
 ﻿using FailBetter.Core;
-using FailBetter.Core.QAssoc;
 using HarmonyLib;
-using Sunless.Game.ApplicationProviders;
-using Sunless.Game.UI.Base;
 using Sunless.Game.UI.Icons;
-using Sunless.Game.Utilities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
-using UnityEngine;
 
 namespace SSTranslator.Sunless_Game
 {

@@ -1,13 +1,4 @@
 ﻿using HarmonyLib;
-using Sunless.Game.Entities;
-using Sunless.Game.Scripts.UI.Intro;
-using Sunless.Game.UI.Tutorial;
-using Sunless.Game.Unity_Extensions.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
 
 namespace SSTranslator
 {

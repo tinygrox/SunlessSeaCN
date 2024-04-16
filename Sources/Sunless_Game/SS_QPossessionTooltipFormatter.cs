@@ -2,10 +2,7 @@
 using HarmonyLib;
 using Sunless.Game.Entities.Combat;
 using Sunless.Game.Formatters.QIcons;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 
 namespace SSTranslator.Sunless_Game

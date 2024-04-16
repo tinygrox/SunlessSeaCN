@@ -1,17 +1,8 @@
 ﻿using HarmonyLib;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Sunless.Game.UI;
 using UnityEngine;
 using Sunless.Game.UI.Menus;
-using System.Runtime.InteropServices;
-using System.Reflection.Emit;
-using UnityEngine.UI;
-using Sunless.Game.ApplicationProviders;
-using Sunless.Game.Utilities;
-using UnityEngineInternal;
 
 namespace SSTranslator.Sunless_Game
 {

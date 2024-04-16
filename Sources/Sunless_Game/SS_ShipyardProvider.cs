@@ -1,15 +1,10 @@
 ﻿using FailBetter.Core;
 using FailBetter.Core.QAssoc;
 using HarmonyLib;
-using Sunless.Game.Entities;
-using Sunless.Game.UI.Components.Sunless.Game.UI.Components;
 using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
-using System.Text;
-using UnityEngine;
 
 namespace SSTranslator.Sunless_Game
 {

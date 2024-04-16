@@ -1,9 +1,6 @@
 ﻿using HarmonyLib;
 using Sunless.Game.Scripts.InputControls;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.Sunless_Game
 {

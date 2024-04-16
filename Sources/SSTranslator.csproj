@@ -47,148 +47,24 @@
       <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="AStarPathfinding">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\AStarPathfinding.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Boo.Lang">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Boo.Lang.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="clipper_library">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\clipper_library.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Failbetter.Core">
       <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Failbetter.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="GalaxyCSharp">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\GalaxyCSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="I18N">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\I18N.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="I18N.CJK">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\I18N.CJK.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="I18N.MidEast">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\I18N.MidEast.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="I18N.Other">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\I18N.Other.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="I18N.Rare">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\I18N.Rare.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="I18N.West">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\I18N.West.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ionic.Zip">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Ionic.Zip.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="JsonFx">
       <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\JsonFx.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Light2D">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Light2D.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Mono.Data.Tds">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Mono.Data.Tds.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Mono.Posix">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Mono.Posix.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Mono.Security">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Mono.Security.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Pathfinding.ClipperLib">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Pathfinding.ClipperLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Pathfinding.JsonFx">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Pathfinding.JsonFx.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Pathfinding.Poly2Tri">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Pathfinding.Poly2Tri.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Poly2Tri">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Poly2Tri.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Steamworks.NET">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Steamworks.NET.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Strange">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Strange.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Sunless.Game">
       <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Sunless.Game.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Configuration">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\System.Configuration.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.EnterpriseServices">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\System.EnterpriseServices.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Security">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\System.Security.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Transactions">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\System.Transactions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\UnityEngine.Networking.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.PlaymodeTestsRunner">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityScript.Lang">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\UnityScript.Lang.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -1,10 +1,5 @@
-﻿using FailBetter.Core;
-using FailBetter.Core.Help;
+﻿using FailBetter.Core.Help;
 using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.FailBetter_Core
 {

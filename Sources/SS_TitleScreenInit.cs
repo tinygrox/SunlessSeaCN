@@ -1,14 +1,4 @@
 ﻿using HarmonyLib;
-using Sunless.Game.ApplicationProviders;
-using Sunless.Game.Scripts.Menus;
-using Sunless.Game.UI;
-using Sunless.Game.Utilities;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 

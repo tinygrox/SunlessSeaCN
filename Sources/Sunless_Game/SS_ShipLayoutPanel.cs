@@ -4,8 +4,6 @@ using Sunless.Game.UI.Gazetteer;
 using Sunless.Game.UI.Hold;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 

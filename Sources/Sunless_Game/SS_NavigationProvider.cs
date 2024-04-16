@@ -1,14 +1,10 @@
-﻿using FailBetter.Core;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Sunless.Game.ApplicationProviders;
-using Sunless.Game.Data.SNRepositories;
 using Sunless.Game.Dictionaries;
 using Sunless.Game.Entities.Geography;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
-using System.Text;
 using UnityEngine;
 
 namespace SSTranslator.Sunless_Game

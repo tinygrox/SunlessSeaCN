@@ -1,12 +1,8 @@
 ﻿using HarmonyLib;
 using Sunless.Game.PlayerPrefDictionaries;
 using Sunless.Game.UI.Menus.Options;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace SSTranslator.Sunless_Game
 {

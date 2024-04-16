@@ -1,10 +1,7 @@
 ﻿using HarmonyLib;
 using Sunless.Game.Combat;
 using Sunless.Game.UI.Combat;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.Sunless_Game
 {

@@ -1,10 +1,6 @@
 ﻿using HarmonyLib;
 using Sunless.Game.Dictionaries;
 using Sunless.Game.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.Sunless_Game
 {

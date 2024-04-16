@@ -1,10 +1,7 @@
 ﻿using HarmonyLib;
 using Sunless.Game.UI.Gazetteer;
 using Sunless.Game.UI.Storylet;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.Sunless_Game
 {

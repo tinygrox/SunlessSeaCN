@@ -1,11 +1,7 @@
 ﻿using FailBetter.Core;
 using FailBetter.Core.Result;
 using HarmonyLib;
-using Mono.Cecil.Cil;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.FailBetter_Core
 {

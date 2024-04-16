@@ -1,12 +1,9 @@
 ﻿using BepInEx;
 using HarmonyLib;
-using Sunless.Game.Entities;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using JsonFx.Json;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace SSTranslator

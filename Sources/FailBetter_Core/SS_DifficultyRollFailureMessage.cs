@@ -2,10 +2,7 @@
 using FailBetter.Core.Result;
 using HarmonyLib;
 using Sunless.Game.Data.SNRepositories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SSTranslator.FailBetter_Core
 {
