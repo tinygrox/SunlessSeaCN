@@ -6,7 +6,7 @@
 
 ## 一、安装使用
 
-- GitHub 下载版本 5.4.22 的 BepInEx （[点此前往](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.22)），游戏版本是 32 位的，所以你也要下载 32 位的，我的意思是下载 BepInEx_x86_5.4.22.0.zip，然后解压到 **游戏根目录**，然后运行一次游戏，关闭游戏
+- GitHub 下载版本  ~~5.4.22~~ 5.4.23.5 的 BepInEx （[点此前往](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5)），游戏版本是 ~~32~~ 64 位的，所以你也要下载 ~~32~~ 64 位的，我的意思是下载 BepInEx_win_x64_5.4.23.5.zip，然后解压到 **游戏根目录**，然后运行一次游戏，关闭游戏
 
 - 下载本页面发布的压缩包后（[点此前往](https://github.com/tinygrox/SunlessSeaCN/releases)），解压放入到 `BepInEx\plugins` 目录下，运行游戏即可享受
 
@@ -67,7 +67,9 @@
 - 向朋友推荐、使用本项目
 - 对于认为只有打钱才能充分表示支持的，可去该 [爱发电页面](https://afdian.com/a/tinygrox) 为本人提供一定的资金资助
 
+---
 
+> 感谢由 【爱发电用户_kQum】 于 2026-06-18 通过 爱发电 赞助的 10 元，祝你永远不死。
 
 ## 四、游戏内实际预览（搭配了 Instant Comet 的汉化）
 

@@ -4,25 +4,24 @@ using HarmonyLib;
 using Sunless.Game.Formatters.RequirementIcons;
 using System.Collections.Generic;
 
-namespace SSTranslator.Sunless_Game
+namespace SSTranslator.Sunless_Game;
+
+[HarmonyPatch(typeof(ThingLockedWithLevelRequirementIcon))]
+public class SS_ThingLockedWithLevelRequirementIcon
 {
-    [HarmonyPatch(typeof(ThingLockedWithLevelRequirementIcon))]
-    public class SS_ThingLockedWithLevelRequirementIcon
+    [HarmonyTranspiler]
+    [HarmonyPatch(MethodType.Constructor, typeof(BaseQRequirement), typeof(IPossessesQualities))]
+    public static IEnumerable<CodeInstruction> SSPatch_ThingLockedWithLevelRequirementIcon(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(MethodType.Constructor, [typeof(BaseQRequirement), typeof(IPossessesQualities)])]
-        public static IEnumerable<CodeInstruction> SSPatch_ThingLockedWithLevelRequirementIcon(IEnumerable<CodeInstruction> instructions)
+        SS_Utility.PatchHelper(() =>
         {
-            SS_Utility.PatchHelper(() =>
+            Dictionary<string, string> trans = new()
             {
-                Dictionary<string, string> trans = new()
-                {
-                    ["Unlocked with "] = "需要",
-                    [" (you have "] = " (你拥有"
-                };
-                SS_Utility.ILReplacer(instructions, trans);
-            });
-            return instructions;
-        }
+                ["Unlocked with "] = "需要",
+                [" (you have "] = " (你拥有"
+            };
+            SS_Utility.ILReplacer(instructions, trans);
+        });
+        return instructions;
     }
 }

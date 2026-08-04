@@ -4,25 +4,24 @@ using HarmonyLib;
 using Sunless.Game.Formatters.RequirementIcons;
 using System.Collections.Generic;
 
-namespace SSTranslator.Sunless_Game
+namespace SSTranslator.Sunless_Game;
+
+[HarmonyPatch(typeof(ThingLockedWithoutLevelRequirementIcon))]
+public class SS_ThingLockedWithoutLevelRequirementIcon
 {
-    [HarmonyPatch(typeof(ThingLockedWithoutLevelRequirementIcon))]
-    public class SS_ThingLockedWithoutLevelRequirementIcon
+    [HarmonyTranspiler]
+    [HarmonyPatch(MethodType.Constructor, typeof(BaseQRequirement), typeof(IPossessesQualities))]
+    public static IEnumerable<CodeInstruction> SSPatch_ThingLockedWithoutLevelRequirementIcon(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(MethodType.Constructor, [typeof(BaseQRequirement), typeof(IPossessesQualities)])]
-        public static IEnumerable<CodeInstruction> SSPatch_ThingLockedWithoutLevelRequirementIcon(IEnumerable<CodeInstruction> instructions)
+        SS_Utility.PatchHelper(() =>
         {
-            SS_Utility.PatchHelper(() =>
+            var trans = new Dictionary<string, string>()
             {
-                var trans = new Dictionary<string, string>()
-                {
-                    ["You need "] = "你需要",
-                    [" (you have "] = " (你拥有"
-                };
-                SS_Utility.ILReplacer(instructions, trans);
-            });
-            return instructions;
-        }
+                ["You need "] = "你需要",
+                [" (you have "] = " (你拥有"
+            };
+            SS_Utility.ILReplacer(instructions, trans);
+        });
+        return instructions;
     }
 }

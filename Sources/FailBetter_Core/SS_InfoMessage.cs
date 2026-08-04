@@ -2,21 +2,20 @@
 using HarmonyLib;
 using UnityEngine;
 
-namespace SSTranslator.FailBetter_Core
-{
-    [HarmonyPatch(typeof(InfoMessage))]
-    public class SS_InfoMessage
-    {
-        [HarmonyPrefix]
-        [HarmonyPatch(MethodType.Constructor, [typeof(string), typeof(string), typeof(string), typeof(string)])]
-        static void SSPatch_InfoMessage(ref string imageTooltip, string headline)
-        {
-            Debug.Log($"[FailBetter.Core] headline:{headline} imageTooltip: {imageTooltip}");
+namespace SSTranslator.FailBetter_Core;
 
-            if (imageTooltip == "A thing has happened!")
-            {
-                imageTooltip = "某件事情发生了！";
-            }
+[HarmonyPatch(typeof(InfoMessage))]
+public class SS_InfoMessage
+{
+    [HarmonyPrefix]
+    [HarmonyPatch(MethodType.Constructor, typeof(string), typeof(string), typeof(string), typeof(string))]
+    static void SSPatch_InfoMessage(ref string imageTooltip, string headline)
+    {
+        Debug.Log($"[FailBetter.Core] headline:{headline} imageTooltip: {imageTooltip}");
+
+        if (imageTooltip == "A thing has happened!")
+        {
+            imageTooltip = "某件事情发生了！";
         }
     }
 }

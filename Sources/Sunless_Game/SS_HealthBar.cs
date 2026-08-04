@@ -4,20 +4,19 @@ using Sunless.Game.Utilities;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SSTranslator.Sunless_Game
+namespace SSTranslator.Sunless_Game;
+
+[HarmonyPatch(typeof(HealthBar))]
+public class SS_HealthBar
 {
-    [HarmonyPatch(typeof(HealthBar))]
-    public class SS_HealthBar
+    [HarmonyTranspiler]
+    [HarmonyPatch(nameof(HealthBar.Update), typeof(Vector3), typeof(int), typeof(int), typeof(BehaviourState), typeof(bool))]
+    public static IEnumerable<CodeInstruction> SSPatch_Update(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(nameof(HealthBar.Update), new[] { typeof(Vector3), typeof(int), typeof(int), typeof(BehaviourState), typeof(bool) })]
-        public static IEnumerable<CodeInstruction> SSPatch_Update(IEnumerable<CodeInstruction> instructions)
+        SS_Utility.PatchHelper(() =>
         {
-            SS_Utility.PatchHelper(() =>
-            {
-                SS_Utility.ILReplacer(ref instructions, " (Crew: ", "(船员：");
-            });
-            return instructions;
-        }
+            SS_Utility.ILReplacer(ref instructions, " (Crew: ", "(船员：");
+        });
+        return instructions;
     }
 }

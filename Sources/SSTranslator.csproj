@@ -1,13 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net35</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SunlessSeaChineseTranslation</AssemblyName>
     <Description>Sunless Sea Chinese Translation</Description>
-    <Version>1.0.0</Version>
+    <OutputType>Library</OutputType>
+    <Version>6.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
-    <OutputPath>G:\SteamLibrary\steamapps\common\SunlessSea\BepInEx\plugins\SunlessSeaChineseTranslation</OutputPath>
+    <OutputPath>$(GamePath)\BepInEx\plugins\SunlessSeaChineseTranslation</OutputPath>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
     <ImplicitUsings>disable</ImplicitUsings>
   </PropertyGroup>
 
@@ -31,93 +35,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
-    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
-    <PackageReference Include="UnityEngine.Modules" Version="5.5.1" IncludeAssets="compile" />
-  </ItemGroup>
-  
-  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
-    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
   
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Failbetter.Core">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Failbetter.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="JsonFx">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\JsonFx.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sunless.Game">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\Sunless.Game.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\UnityEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>G:\SteamLibrary\steamapps\common\SunlessSea\Sunless Sea_Data\Managed\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <Reference Include="$(GamePath)\BepInEx\core\0Harmony.dll" Private="False"/>
+    <Reference Include="$(GamePath)\BepInEx\core\BepInEx.Preloader.dll" Private="False"/>
+    <Reference Include="$(GamePath)\BepInEx\core\BepInEx.dll" Private="False"/>
   </ItemGroup>
-  
+
   <ItemGroup>
-    <Reference Update="mscorlib">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Core">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Data">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Drawing">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Runtime.Serialization">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Xml">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Xml.Linq">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="Properties\" />
+    <Reference Include="$(GamePath)\Sunless Sea_Data\Managed\Failbetter.Core.dll" Private="False"/>
+    <Reference Include="$(GamePath)\Sunless Sea_Data\Managed\JsonFx.dll" Private="False"/>
+    <Reference Include="$(GamePath)\Sunless Sea_Data\Managed\Sunless.Game.dll" Private="False" />
+    <Reference Include="$(GamePath)\Sunless Sea_Data\Managed\Unity*" Private="False"/>
   </ItemGroup>
 </Project>

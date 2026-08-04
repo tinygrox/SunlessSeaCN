@@ -2,24 +2,23 @@
 using HarmonyLib;
 using System.Collections.Generic;
 
-namespace SSTranslator.FailBetter_Core
+namespace SSTranslator.FailBetter_Core;
+
+[HarmonyPatch(typeof(StoryletErrorMessage))]
+public class SS_StoryletErrorMessage
 {
-    [HarmonyPatch(typeof(StoryletErrorMessage))]
-    public class SS_StoryletErrorMessage
+    [HarmonyTranspiler]
+    [HarmonyPatch(MethodType.Constructor)]
+    public static IEnumerable<CodeInstruction> SSPatch_classname(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(MethodType.Constructor)]
-        public static IEnumerable<CodeInstruction> SSPatch_classname(IEnumerable<CodeInstruction> instructions)
+        SS_Utility.PatchHelper(() =>
         {
-            SS_Utility.PatchHelper(() =>
+            var trans = new Dictionary<string, string>()
             {
-                var trans = new Dictionary<string, string>()
-                {
-                    ["Something went wrong!..but everything's good. Click 'Done' to continue."] = "有地方出错了！…但目前一切正常。点击“完成”继续游戏"
-                };
-                SS_Utility.ILReplacer(instructions, trans, true);
-            });
-            return instructions;
-        }
+                ["Something went wrong!..but everything's good. Click 'Done' to continue."] = "有地方出错了！…但目前一切正常。点击“完成”继续游戏"
+            };
+            SS_Utility.ILReplacer(instructions, trans, true);
+        });
+        return instructions;
     }
 }

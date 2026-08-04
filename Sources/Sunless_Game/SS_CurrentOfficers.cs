@@ -4,20 +4,19 @@ using Sunless.Game.UI.Gazetteer;
 using Sunless.Game.UI.Gazetteer.Officers;
 using System.Collections.Generic;
 
-namespace SSTranslator.Sunless_Game
+namespace SSTranslator.Sunless_Game;
+
+[HarmonyPatch(typeof(CurrentOfficers))]
+public class SS_CurrentOfficers
 {
-    [HarmonyPatch(typeof(CurrentOfficers))]
-    public class SS_CurrentOfficers
+    [HarmonyTranspiler]
+    [HarmonyPatch(MethodType.Constructor, typeof(Gazetteer), typeof(List<CharacterQPossession>))]
+    public static IEnumerable<CodeInstruction> SSPatch_CurrentOfficers(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(MethodType.Constructor, [typeof(Gazetteer), typeof(List<CharacterQPossession>)])]
-        public static IEnumerable<CodeInstruction> SSPatch_CurrentOfficers(IEnumerable<CodeInstruction> instructions)
+        SS_Utility.PatchHelper(() =>
         {
-            SS_Utility.PatchHelper(() =>
-            {
-                SS_Utility.ILReplacer(ref instructions, "Current Officers", "当前军官");
-            });
-            return instructions;
-        }
+            SS_Utility.ILReplacer(ref instructions, "Current Officers", "当前军官");
+        });
+        return instructions;
     }
 }

@@ -3,20 +3,19 @@ using Sunless.Game.UI.Gazetteer;
 using Sunless.Game.UI.Storylet;
 using System.Collections.Generic;
 
-namespace SSTranslator.Sunless_Game
+namespace SSTranslator.Sunless_Game;
+
+[HarmonyPatch(typeof(StoryletIn))]
+public class SS_StoryletIn
 {
-    [HarmonyPatch(typeof(StoryletIn))]
-    public class SS_StoryletIn
+    [HarmonyTranspiler]
+    [HarmonyPatch(MethodType.Constructor, typeof(Gazetteer), typeof(FailBetter.Core.Event))]
+    public static IEnumerable<CodeInstruction> SSPatch_classname(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(MethodType.Constructor, [typeof(Gazetteer), typeof(FailBetter.Core.Event)])]
-        public static IEnumerable<CodeInstruction> SSPatch_classname(IEnumerable<CodeInstruction> instructions)
+        SS_Utility.PatchHelper(() =>
         {
-            SS_Utility.PatchHelper(() =>
-            {
-                SS_Utility.ILReplacer(ref instructions, "Perhaps Not", "还是算了");
-            });
-            return instructions;
-        }
+            SS_Utility.ILReplacer(ref instructions, "Perhaps Not", "还是算了");
+        });
+        return instructions;
     }
 }

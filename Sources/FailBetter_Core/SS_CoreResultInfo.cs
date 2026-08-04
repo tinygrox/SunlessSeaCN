@@ -2,24 +2,23 @@
 using HarmonyLib;
 using System.Collections.Generic;
 
-namespace SSTranslator.FailBetter_Core
+namespace SSTranslator.FailBetter_Core;
+
+[HarmonyPatch(typeof(CoreResultInfo))]
+public class SS_CoreResultInfo
 {
-    [HarmonyPatch(typeof(CoreResultInfo))]
-    public class SS_CoreResultInfo
+    [HarmonyTranspiler]
+    [HarmonyPatch(nameof(CoreResultInfo.GetCombatMessages))]
+    public static IEnumerable<CodeInstruction> SSPatch_GetCombatMessages(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(nameof(CoreResultInfo.GetCombatMessages))]
-        public static IEnumerable<CodeInstruction> SSPatch_GetCombatMessages(IEnumerable<CodeInstruction> instructions)
+        SS_Utility.PatchHelper(() =>
         {
-            SS_Utility.PatchHelper(() =>
+            Dictionary<string, string> trans = new()
             {
-                Dictionary<string, string> trans = new()
-                {
-                    [" and "] = "和"
-                };
-                SS_Utility.ILReplacer(instructions, trans, true);
-            });
-            return instructions;
-        }
+                [" and "] = "和"
+            };
+            SS_Utility.ILReplacer(instructions, trans, true);
+        });
+        return instructions;
     }
 }

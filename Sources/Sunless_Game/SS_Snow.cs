@@ -3,17 +3,16 @@ using Sunless.Game.Entities.Weather;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SSTranslator.Sunless_Game
+namespace SSTranslator.Sunless_Game;
+
+[HarmonyPatch(typeof(Snow))]
+public class SS_Snow
 {
-    [HarmonyPatch(typeof(Snow))]
-    public class SS_Snow
+    [HarmonyTranspiler]
+    [HarmonyPatch(nameof(Snow.OnEnter), typeof(Collider2D))]
+    public static IEnumerable<CodeInstruction> SSPatch_OnEnter(IEnumerable<CodeInstruction> instructions)
     {
-        [HarmonyTranspiler]
-        [HarmonyPatch(nameof(Snow.OnEnter), new[] { typeof(Collider2D) })]
-        public static IEnumerable<CodeInstruction> SSPatch_OnEnter(IEnumerable<CodeInstruction> instructions)
-        {
-            SS_Utility.ILReplacer(ref instructions, "Snow sweeps down from the north! The ship's engines labour against it.", "大雪从北方袭来！船舶引擎在轰鸣着与之对抗！");
-            return instructions;
-        }
+        SS_Utility.ILReplacer(ref instructions, "Snow sweeps down from the north! The ship's engines labour against it.", "大雪从北方袭来！船舶引擎在轰鸣着与之对抗！");
+        return instructions;
     }
 }
