@@ -7,29 +7,7 @@
 ## 一、安装使用
 
 - GitHub 下载版本  ~~5.4.22~~ 5.4.23.5 的 BepInEx （[点此前往](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5)），游戏版本是 ~~32~~ 64 位的，所以你也要下载 ~~32~~ 64 位的，我的意思是下载 BepInEx_win_x64_5.4.23.5.zip，然后解压到 **游戏根目录**，然后运行一次游戏，关闭游戏
-
 - 下载本页面发布的压缩包后（[点此前往](https://github.com/tinygrox/SunlessSeaCN/releases)），解压放入到 `BepInEx\plugins` 目录下，运行游戏即可享受
-
-- 为了应用本项目对游戏启动界面的汉化，玩家还需要手动用任意文本编辑器打开`BepInEx\config\BepInEx.cfg`文件，找到相应字段并修改成与如下内容一致：
-
-  ```ini
-  [Preloader.Entrypoint]
-  
-  ## The local filename of the assembly to target.
-  # Setting type: String
-  # Default value: UnityEngine.dll
-  Assembly = UnityEngine.dll
-  
-  ## The name of the type in the entrypoint assembly to search for the entrypoint method.
-  # Setting type: String
-  # Default value: Application
-  Type = Camera
-  
-  ## The name of the method in the specified entrypoint assembly and type to hook and load Chainloader from.
-  # Setting type: String
-  # Default value: .cctor
-  Method = .cctor
-  ```
 
 ## 二、其他说明
 
